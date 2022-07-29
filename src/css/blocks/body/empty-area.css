@@ -1,0 +1,10 @@
+.empty-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  background-color: black;
+}
+.empty-area--active {
+  left: 0;
+}

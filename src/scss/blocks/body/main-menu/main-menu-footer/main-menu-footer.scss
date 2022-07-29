@@ -1,0 +1,52 @@
+.main-menu-footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-bottom: 32px;
+    flex-grow: 2;
+
+    &-container {
+        margin-top: auto;
+        display: flex;
+    }
+
+    &-menu-list {
+        display: flex;
+        gap: 16px;
+    }
+
+    &-contacts{
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &__email {
+            color: $text-dark;
+            text-decoration: none;
+        }
+        
+        &__number{
+            color: $text-dark;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 32px;
+            text-decoration: none;
+        }
+    }
+
+    &-lang-switcher {
+        max-height: 75px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        flex-grow: 2;
+        
+        &__list {    
+            margin-top: auto;
+            display: flex;
+            gap: 7px;
+        }
+    }
+}

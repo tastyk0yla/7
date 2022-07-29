@@ -1,0 +1,56 @@
+.device-type-slider {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    color: $text-light;
+    height: 280px;
+
+    @media screen and (min-width: 768px){
+        height: unset;
+    }
+    
+    &-container {
+        min-width: 0;
+        max-width: 100%;
+        height: 100%;
+        background-color: $bgColor-dark;
+    }
+
+    &__cards {
+        height: 265px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 16px;
+        min-width: 0;
+        transition: all 0.3s ease;
+
+        @media screen and (min-width: 768px){
+            padding: 24px;
+            gap: 24px;
+            flex-wrap: wrap;
+            overflow: hidden;
+            height: 160px;
+        }
+
+        &--expanded {
+            @media screen and (min-width: 768px){
+                height: 528px;
+            }
+            
+
+            @media (min-width: 1233px) and (max-width: 1365px) {
+                height: 345px; 
+            }
+
+            @media screen and (min-width: 1556px) {
+                height: 345px;
+            }
+        }
+    }
+
+    &__pagination {
+        transform: translateY(-100px);
+    }
+}

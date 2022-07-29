@@ -1,0 +1,70 @@
+.services-slider {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    color: $text-light;
+
+    &-container {
+        box-sizing: border-box;
+        min-width: 0;
+        max-width: 100%;
+        height: 100%;
+        background-color: $bgColor-dark;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+
+    &__cards {
+        max-height: 265px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 16px;
+        min-width: 0;
+
+        @media screen and (min-width: 768px) {
+            box-sizing: border-box;
+            flex-direction: column;
+            padding: 0 16px;
+            margin: 0 24px;
+            background-color: $bgColor-light;
+            border-radius: 6px;
+            border: 1px solid transparent;
+            max-width: 97%;
+            max-height: 327px;
+
+        }
+    };
+    
+
+    &__disclaimer{
+        width: 288px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: $text-dark;
+        margin: 16px auto;
+
+        
+        @media screen and (min-width: 768px) {
+            margin: 16px auto 16px 24px;
+            width: 60%;
+        }
+
+        @media screen and (min-width: 1366px) {
+            margin: 32px auto 16px 32px;
+            width: 60%;
+        }
+    }   
+
+    &__btn {
+        @media screen and (min-width: 768px) {
+            width: 316px;
+            height: 24px;
+        }
+    }
+}

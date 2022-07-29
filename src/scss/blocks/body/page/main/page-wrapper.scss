@@ -1,0 +1,16 @@
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 24px;
+
+    @media screen and (min-width: 1366px){
+        gap: 32px;
+        margin-top: 42px;
+    }
+
+    @media screen and (min-width: 1366px){
+        gap: 8px;
+        margin-top: 42px;
+    }
+}

@@ -1,0 +1,24 @@
+.menu-slider{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-basis: 100%;
+    padding-left: 16px;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+    overflow-x: scroll;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 24px;
+    }
+
+    @media screen and (min-width: 1366px){
+      margin-right: 34px;
+    }
+    
+    &::-webkit-scrollbar {
+        display: none;
+      }
+
+}

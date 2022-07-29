@@ -1,0 +1,16 @@
+.header-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    background-color: $bgColor-light;
+    justify-content: center;
+    border-bottom: 1px solid #D9FFF5;
+
+    @media screen and (min-width: 1366px){
+        background-color: rgba(0, 0, 0, 0);
+        border: 0px;
+        width: 100%;
+        position: absolute;
+        top: 18px;
+    }
+}
+

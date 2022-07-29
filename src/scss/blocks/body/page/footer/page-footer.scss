@@ -1,0 +1,42 @@
+.page-footer{
+    padding: 17px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    border-top: 1px solid $clrDividers;
+    font-size: 14px;
+    color: $text-light;
+    height: 147px;
+    gap: 16px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    &>a {
+        text-decoration: none;
+        color: $text-light;
+    }
+
+    &>p {
+        text-align: center;
+
+        &:first-child {
+            @media screen and (min-width: 768px) {
+                text-align: left;
+                width: 33%;
+            }
+        }
+    
+        &:last-child {
+            @media screen and (min-width: 768px) {
+                text-align: right;
+                width: 33%;
+            }
+        }
+    }
+}

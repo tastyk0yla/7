@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Услуги и сервисы</title>
+  </head>
+  <body>
+    <nav class="main-menu">
+      <nav class="main-menu-container">
+        <ul class="main-menu-header">
+          <li class="main-menu-header__button-close">
+            <button class="btn-close btn-circle" href="#">
+              <img src="./img/close.svg" alt="Закрыть" />
+            </button>
+          </li>
+          <li class="main-menu-header__logo small-logo">
+            <a class="logo" href="#">
+              <img src="./img/logo.svg" alt="Логотип компании ЦПС" />
+            </a>
+          </li>
+          <li class="main-menu-header__button-search">
+            <button class="btn-search btn-circle" href="#">
+              <img src="./img/search.svg" alt="Поиск" />
+            </button>
+          </li>
+        </ul>
+        <ul class="main-menu-main-list">
+          <li
+            class="main-menu-main-list__item main-menu-main-list__item-active"
+          >
+            <a class="main-menu-main-list-item__link link-active" href="#">
+              Ремонт техники
+            </a>
+          </li>
+          <li class="main-menu-main-list__item">
+            <a class="main-menu-main-list-item__link" href="#">
+              Услуги и сервисы
+            </a>
+          </li>
+          <li class="main-menu-main-list__item">
+            <a class="main-menu-main-list-item__link" href="#">
+              Корпоративным клиентам
+            </a>
+          </li>
+          <li class="main-menu-main-list__item">
+            <a class="main-menu-main-list-item__link" href="#">
+              Продавцам техники
+            </a>
+          </li>
+          <li class="main-menu-main-list__item">
+            <a class="main-menu-main-list-item__link" href="#"> Партнерам </a>
+          </li>
+          <li class="main-menu-main-list__item">
+            <a class="main-menu-main-list-item__link" href="#">
+              Производителям
+            </a>
+          </li>
+          <li class="main-menu-main-list__item">
+            <a class="main-menu-main-list-item__link" href="#">
+              Наши сервисные центры
+            </a>
+          </li>
+          <li class="main-menu-main-list__item">
+            <a class="main-menu-main-list-item__link" href="#"> Контакты </a>
+          </li>
+        </ul>
+        <div class="main-menu-footer">
+          <div class="main-menu-footer-container">
+            <ul class="main-menu-footer-menu-list">
+              <li class="main-menu-footer-menu-list__button-call">
+                <button class="btn-call btn-circle" href="#">
+                  <img src="./img/call.svg" alt="Заказать звонок" />
+                </button>
+              </li>
+              <li class="main-menu-footer-menu-list__button-message">
+                <button class="btn-message btn-circle" href="#">
+                  <img src="./img/message.svg" alt="Чат" />
+                </button>
+              </li>
+              <li class="main-menu-footer-menu-list__button-profile">
+                <button class="btn-profile btn-circle" href="#">
+                  <img src="./img/profile.svg" alt="Профиль" />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="main-menu-footer-contacts">
+            <a
+              class="main-menu-footer-contacts__email"
+              href="mailto:mail@cps.com"
+              >mail@cps.com</a
+            >
+            <a class="main-menu-footer-contacts__number" href="tel:+7008908900"
+              >8 800 890 8900</a
+            >
+          </div>
+          <div class="main-menu-footer-lang-switcher">
+            <ul class="main-menu-footer-lang-switcher__list">
+              <li class="lang-switcher-list__item">
+                <a class="main-menu-main-list-item__link link-active" href="#"
+                  >RU</a
+                >
+              </li>
+              <li class="lang-switcher-list__item">
+                <a class="main-menu-main-list-item__link" href="#">EN</a>
+              </li>
+              <li class="lang-switcher-list__item">
+                <a class="main-menu-main-list-item__link" href="#">CH</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main-menu-empty-area"></div>
+    </nav>
+    <div class="page">
+      <header class="header-wrapper">
+        <nav class="header-menu">
+          <div class="menu-btn-circle-burger__container header-menu__btn-burger">
+            <button class="btn-circle-burger btn-circle" type="button">
+              <img src="./img/burger.svg" alt="Открыть меню" />
+            </button>
+          </div>
+          <div class="header-menu__logo small-logo">
+            <a class="header-menu__logo-link" href="#">
+              <img src="./img/logo.svg" alt="Логотип компании ЦПС" />
+            </a>
+          </div>
+          <div class="header-menu-btns-hidden___container">
+            <button class="btn-call btn-circle" type="button">
+              <img src="./img/call.svg" alt="Заказать звонок" />
+            </button>
+            <button class="btn-message btn-circle" type="button">
+              <img src="./img/message.svg" alt="Чат" />
+            </button>
+            <button class="btn-profile btn-circle" type="button">
+              <img src="./img/profile.svg" alt="Профиль" />
+            </button>
+          </div>
+          <div class="header-menu-btns-visible__container">
+            <button class="btn-circle-repair" type="button">
+              <p class="header-menu-btn__text btn__text">Оставить заявку</p>
+              <div class="btn-circle" >
+                <img src="./img/repair.svg" alt="Оставить заявку" />
+              </div>
+            </button>
+            <button class="btn-circle-check-status" type="button">
+              <p class="header-menu-btn__text btn__text">Статус ремонта</p>
+              <div class="btn-circle">
+                <img src="./img/checkstatus.svg" alt="Статус ремонта" />
+              </div>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <main class="page-wrapper">
+        <div class="title">
+          <h1 class="title__text">Услуги и сервисы</h1>
+        </div>
+        <nav class="menu-slider">
+          <button type="button" class="menu-btn-slider btn-slider">
+            <!-- menu-btn-slider-active -->
+            <p class="btn__text">Ремонтируемые устройства</p>
+          </button>
+          <button type="button" class="menu-btn-slider btn-slider">
+            <p class="btn__text">Дополнительные услуги</p>
+          </button>
+          <button type="button" class="menu-btn-slider btn-slider">
+            <p class="btn__text">Цены на услуги</p>
+          </button>
+          <button type="button" class="menu-btn-slider btn-slider">
+            <p class="btn__text">Адреса сервисных центров</p>
+          </button>
+          <button type="button" class="menu-btn-slider btn-slider">
+            <p class="btn__text">Специальные цены</p>
+          </button>
+        </nav>
+        <article class="about">
+          <div class="article">
+            <div class="article__text">
+              <p class="article__text-p1">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                <span lang="en">Dell</span>. Только у нас вы можете
+                отремонтировать свой ноутбук <span lang="en">Dell</span> с
+                официальной гарантией производителя.
+              </p>
+              <p class="article__text-p2">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
+              <p class="article__text-p3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut vitae quaerat et libero eaque, molestiae nam quo voluptates corporis veritatis voluptas cumque deserunt, ut harum repudiandae eveniet similique! Id, provident.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloribus ipsum officia itaque eos necessitatibus voluptatum omnis maiores a neque enim, dolor illum error deleniti qui recusandae vero non! Hic?
+                Ipsum incidunt aliquam odit cum quam sint quae ea debitis mollitia? Officia, tempore? Rerum nam inventore enim odio cum corporis itaque, veritatis molestias error eius quod quae sequi reiciendis culpa.
+                Ullam facilis sed perspiciatis recusandae labore, dignissimos odio aliquid dolorem repudiandae sequi ex veritatis voluptatem non iure cum totam neque quas eum enim consequuntur debitis? Iste consectetur vero quas quos!
+                Quidem repudiandae enim voluptatum accusantium nemo molestias rem, voluptate ipsum! Velit delectus repudiandae alias quod a, voluptates rem aliquid dolorem at molestias doloremque tempora adipisci voluptatum rerum possimus aperiam qui?
+                Fugiat, voluptates deleniti commodi facere neque iure. Voluptates ad, labore velit commodi eligendi ea sit aliquid quos saepe voluptate excepturi odio sequi, ipsa nulla esse, quis consequatur cupiditate optio. Maxime!
+              </p>
+            </div>
+            <button type="button" class="article__btn btn-expand">
+              <img src="./img/expand.svg" alt="Читать далее" class="btn-expand__img"/>
+              <p class="btn-expand__text btn__text">Читать далее</p>
+            </button>
+          </div>
+          <div class="about__image">
+            <img src="./img/about__image.jpg" alt="Логотип компании ЦПС" />
+          </div>
+        </article>
+        <div class="brand-slider">
+          <p class="brand-slider__title slider-title"
+            >Ремонт техники различных брендов</p
+          >
+          <div class="brand-slider-container swiper-brands">
+            <ul class="brand-slider__cards swiper-wrapper">
+              <li class="brand-card swiper-slide">
+                <a class="brand-card__link" href="#">
+                  <img src="./img/brand-logos/lenovo.png" alt="Леново" />
+                </a>
+                <button class="btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="brand-card swiper-slide">
+                <a class="brand-card__link" href="#">
+                  <img src="./img/brand-logos/samsung.png" alt="Самсунг" />
+                </a>
+                <button class="btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="brand-card swiper-slide">
+                <a class="brand-card__link" href="#">
+                  <img src="./img/brand-logos/apple.png" alt="Эпл" />
+                </a>
+                <button class="btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="brand-card swiper-slide">
+                <a class="brand-card__link" href="#">
+                  <img src="./img/brand-logos/bosh.png" alt="Бош" />
+                </a>
+                <button class="btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="brand-card swiper-slide">
+                <a class="brand-card__link" href="#">
+                  <img src="./img/brand-logos/HP.png" alt="Эйчпи" />
+                </a>
+                <button class="btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="brand-card swiper-slide">
+                <a class="brand-card__link" href="#">
+                  <img src="./img/brand-logos/acer.png" alt="Эйсер" />
+                </a>
+                <button class="btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="brand-card swiper-slide">
+                <a class="brand-card__link" href="#">
+                  <img src="./img/brand-logos/viewsonic.png" alt="Вьюсоник" />
+                </a>
+                <button class="btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="brand-card swiper-slide">
+                <a class="brand-card__link" href="#">
+                  <img src="./img/brand-logos/sony.png" alt="Сони" />
+                </a>
+                <button class="btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="brand-card swiper-slide">
+                <a class="brand-card__link" href="#">
+                  <img src="./img/brand-logos/lenovo.png" alt="Леново" />
+                </a>
+                <button class="btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <button type="button" class="slider__btn-expand btn-expand">
+              <img src="./img/expand.svg" alt="Показать все" class="btn-expand__img"/>
+              <p class="btn-expand__text btn__text">Показать все</p>
+            </button>
+          </div>
+        </div>
+        <div class="device-type-slider">
+          <p class="device-type-slider__title slider-title"
+            >Ремонт различных видов техники</p
+          >
+          <div class="device-type-slider-container swiper-devices">
+            <ul class="device-type-slider__cards swiper-wrapper cards">
+              <li class="device-type-card swiper-slide">
+                <p class="device-type-card__title">Ремонт ноутбуков</p>
+                <button class="device-type-card__button btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="device-type-card swiper-slide">
+                <p class="device-type-card__title">Ремонт планшетов</p>
+                <button class="device-type-card__button btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="device-type-card swiper-slide">
+                <p class="device-type-card__title">Ремонт ПК</p>
+                <button class="device-type-card__button btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="device-type-card swiper-slide">
+                <p class="device-type-card__title">Ремонт мониторов</p>
+                <button class="device-type-card__button btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="device-type-card swiper-slide">
+                <p class="device-type-card__title">Ремонт телефонов</p>
+                <button class="device-type-card__button btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="device-type-card swiper-slide">
+                <p class="device-type-card__title">Ремонт консолей</p>
+                <button class="device-type-card__button btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="device-type-card swiper-slide">
+                <p class="device-type-card__title">Ремонт ноутбуков</p>
+                <button class="device-type-card__button btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="device-type-card swiper-slide">
+                <p class="device-type-card__title">Ремонт планшетов</p>
+                <button class="device-type-card__button btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+              <li class="device-type-card swiper-slide">
+                <p class="device-type-card__title">Ремонт ПК</p>
+                <button class="device-type-card__button btn-circle-more">
+                  <img src="./img/arrow.svg" alt="Подробнее" />
+                </button>
+              </li>
+            </ul>
+            <button type="button" class="slider__btn-expand btn-expand">
+              <img src="./img/expand.svg" alt="Показать все" class="btn-expand__img"/>
+              <p class="btn-expand__text btn__text">Показать все</p>
+            </button>
+            <div class="swiper-pagination device-type-slider__pagination"></div>
+          </div>
+        </div>
+        <div class="services-slider">
+          <p class="services-slider__title slider-title">Цены на услуги</p>
+          <div class="services-slider-container swiper-services">
+            <div class="services-card__legend">
+              <p class="services-legend__text services-card--services">Ремонтные услуги</p>
+              <p class="services-legend__text services-card--price">Цена</p>
+              <p class="services-legend__text services-card--term">Срок</p>
+            </div>
+            <ul class="services-slider__cards swiper-wrapper">
+              <li class="services-card swiper-slide">
+                <div class="services-card__info">
+                  <div class="services-card__info-name">
+                    <p class="services-card-info__title">Ремонтные услуги</p>
+                    <p class="services-card-info__value services-card--services">Диагностика</p>
+                  </div>
+                  <div class="services-card__info-price">
+                    <p class="services-card-info__title">Цена</p>
+                    <p class="services-card-info__value services-card--price">Бесплатно</p>
+                  </div>
+                  <div class="services-card__info-term">
+                    <p class="services-card-info__title">Срок</p>
+                    <p class="services-card-info__value services-card--term">30 мин</p>
+                  </div>
+                </div>
+                <button class="services-card__btn btn-cta">
+                  <p class="btn-cta__text">Заказать</p>
+                  <img src="../src/img/goside.svg" alt="Заказать" />
+                </button>
+              </li>
+              <li class="services-card swiper-slide">
+                <div class="services-card__info">
+                  <div class="services-card__info-name">
+                    <p class="services-card-info__title">Ремонтные услуги</p>
+                    <p class="services-card-info__value services-card--services">Замена дисплея</p>
+                  </div>
+                  <div class="services-card__info-price">
+                    <p class="services-card-info__title">Цена</p>
+                    <p class="services-card-info__value services-card--price">1 000 ₽</p>
+                  </div>
+                  <div class="services-card__info-term">
+                    <p class="services-card-info__title">Срок</p>
+                    <p class="services-card-info__value services-card--term">30-120 мин</p>
+                  </div>
+                </div>
+                <button class="services-card__btn btn-cta">
+                  <p class="btn-cta__text">Заказать</p>
+                  <img src="../src/img/goside.svg" alt="Заказать" />
+                </button>
+              </li>
+              <li class="services-card swiper-slide">
+                <div class="services-card__info">
+                  <div class="services-card__info-name">
+                    <p class="services-card-info__title">Ремонтные услуги</p>
+                    <p class="services-card-info__value services-card--services"
+                      >Замена полифонического динамика</p
+                    >
+                  </div>
+                  <div class="services-card__info-price">
+                    <p class="services-card-info__title">Цена</p>
+                    <p class="services-card-info__value services-card--price">1 000 ₽</p>
+                  </div>
+                  <div class="services-card__info-term">
+                    <p class="services-card-info__title">Срок</p>
+                    <p class="services-card-info__value services-card--term">30-120 мин</p>
+                  </div>
+                </div>
+                <button class="services-card__btn btn-cta">
+                  <p class="btn-cta__text">Заказать</p>
+                  <img src="../src/img/goside.svg" alt="Заказать" />
+                </button>
+              </li>
+              <li class="services-card swiper-slide">
+                <div class="services-card__info">
+                  <div class="services-card__info-name">
+                    <p class="services-card-info__title">Ремонтные услуги</p>
+                    <p class="services-card-info__value services-card--services"
+                      >Тестирование с выдачей технического заключения</p
+                    >
+                  </div>
+                  <div class="services-card__info-price">
+                    <p class="services-card-info__title">Цена</p>
+                    <p class="services-card-info__value services-card--price">1 000 ₽</p>
+                  </div>
+                  <div class="services-card__info-term">
+                    <p class="services-card-info__title">Срок</p>
+                    <p class="services-card-info__value services-card--term">30-120 мин</p>
+                  </div>
+                </div>
+                <button class="services-card__btn btn-cta">
+                  <p class="btn-cta__text">Заказать</p>
+                  <img src="../src/img/goside.svg" alt="Заказать" />
+                </button>
+              </li>
+              <li class="services-card swiper-slide">
+                <div class="services-card__info">
+                  <div class="services-card__info-name">
+                    <p class="services-card-info__title">Ремонтные услуги</p>
+                    <p class="services-card-info__value services-card--services"
+                      >Замена программного обеспечения</p
+                    >
+                  </div>
+                  <div class="services-card__info-price">
+                    <p class="services-card-info__title">Цена</p>
+                    <p class="services-card-info__value services-card--price">1 000 ₽</p>
+                  </div>
+                  <div class="services-card__info-term">
+                    <p class="services-card-info__title">Срок</p>
+                    <p class="services-card-info__value services-card--term">30-120 мин</p>
+                  </div>
+                </div>
+                <button class="services-card__btn btn-cta">
+                  <p class="btn-cta__text">Заказать</p>
+                  <img src="../src/img/goside.svg" alt="Заказать" />
+                </button>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="services-large">
+            <div class="services-large__legend">
+              <div class="services-large__legend--wrapper">
+                <p class="legend--services">Ремонтные услуги</p>
+                <p class="legend--price">Цена</p>
+                <p class="legend--term">Срок</p>
+              </div>
+            </div>
+            <ul class="services-large-cards">
+              <li class="services-large-cards-item">
+                <p class="services-large-cards-item__services">Диагностика</p>
+                <p class="services-large-cards-item__price">Бесплатно</p>
+                <p class="services-large-cards-item__term">30 мин</p>
+                <button class="services-large-cards-item__btn btn-cta">
+                  <p class="btn-cta__text">Заказать</p>
+                  <img src="../src/img/goside.svg" alt="Заказать" />
+                </button>
+              </li>
+              <li class="services-large-cards-item">
+                <p class="services-large-cards-item__services">Замена дисплея</p>
+                <p class="services-large-cards-item__price">1 000 ₽</p>
+                <p class="services-large-cards-item__term">30-120 мин</p>
+                <button class="services-large-cards-item__btn btn-cta">
+                  <p class="btn-cta__text">Заказать</p>
+                  <img src="../src/img/goside.svg" alt="Заказать" />
+                </button>
+              </li>              
+              <li class="services-large-cards-item">
+                <p class="services-large-cards-item__services">Замена полифонического динамика</p>
+                <p class="services-large-cards-item__price">1 000 ₽</p>
+                <p class="services-large-cards-item__term">30-120 мин</p>
+                <button class="services-large-cards-item__btn btn-cta">
+                  <p class="btn-cta__text">Заказать</p>
+                  <img src="../src/img/goside.svg" alt="Заказать" />
+                </button>
+              </li>              
+              <li class="services-large-cards-item">
+                <p class="services-large-cards-item__services">Тестирование с выдачей технического заключения</p>
+                <p class="services-large-cards-item__price">1 000 ₽</p>
+                <p class="services-large-cards-item__term">30-120 мин</p>
+                <button class="services-large-cards-item__btn btn-cta">
+                  <p class="btn-cta__text">Заказать</p>
+                  <img src="../src/img/goside.svg" alt="Заказать" />
+                </button>
+              </li>              
+              <li class="services-large-cards-item">
+                <p class="services-large-cards-item__services">Замена программного обеспечения</p>
+                <p class="services-large-cards-item__price">1 000 ₽</p>
+                <p class="services-large-cards-item__term">30-120 мин</p>
+                <button class="services-large-cards-item__btn btn-cta">
+                  <p class="btn-cta__text">Заказать</p>
+                  <img src="../src/img/goside.svg" alt="Заказать" />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="services-slider__disclaimer">
+            <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на
+              единичную услугу. Для получения коммерческого предложения на
+              постоянное обслуживание, оставьте заявку.</p>
+            <button type="button" class="services-slider__btn btn-get-offer">
+              <p class="btn-get-offer__text"
+                >Получить коммерческое предложение
+                <img
+                  src="./img/more.svg"
+                  alt="Получить коммерчерское предложение"
+                />
+              </p>
+            </button>
+          </div>
+
+        </div>
+      </main>
+      <footer class="page-footer">
+        <p>© 2019 CPS<br />Разработано командой Apesong </p>
+        <a href="#">Политика конфиденциальности</a>
+        <p
+          >Информация, размещенная на данной странице, не является публичной
+          офертой</p
+        >
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="modal-empty-area"></div>
+      <div class="modal-feedback">
+          <button
+            class="modal__btn-close btn-circle btn-close--modal-feedback"
+            href="#"
+          >
+            <img src="./img/close.svg" alt="Закрыть" />
+          </button>
+          <form action="#" class="modal-feedback-form" name="feedback-form">
+            <fieldset class="modal-feedback-fieldset">
+              <legend class="modal__title">Обратная связь</legend>
+              <label for="name">
+                <input
+                  class="modal-row-input"
+                  name="name"
+                  type="text"
+                  placeholder="Имя"
+                  required
+                />
+              </label>
+              <label for="phone">
+                <input
+                  class="modal-row-input"
+                  name="phone"
+                  type="tel"
+                  placeholder="Телефон"
+                  required
+                />
+              </label>
+              <label for="email">
+                <input
+                  class="modal-row-input"
+                  name="email"
+                  type="email"
+                  placeholder="Электронная почта"
+                  required
+                />
+              </label>
+              <label for="message">
+                <textarea
+                  class="modal-textarea"
+                  name="message"
+                  id=""
+                  cols="29"
+                  rows="6"
+                  placeholder="Сообщение"
+                ></textarea>
+                <p class="modal-paragraph">
+                  Нажимая “отправить”, вы даете согласие на
+                  <a href="#" class="modal-paragraph-link"
+                    >обработку персональных данных</a
+                  >
+                  и соглашаетесь с нашей
+                  <a href="#" class="modal-paragraph-link"
+                    >политикой конфиденциальности</a
+                  >
+                </p>
+              </label>
+            </fieldset>
+            <button
+              type="submit"
+              class="modal-feedback-form-submit-btn btn-cta modal-submit-btn"
+            >
+              <p class="btn-cta__text">Отправить</p>
+              <img src="../src/img/goside.svg" alt="Отправить" />
+            </button>
+          </form>
+      </div>
+      <div class="modal-recall">
+          <button class="modal__btn-close btn-circle btn-close--modal-recall" href="#">
+            <img src="./img/close.svg" alt="Закрыть" />
+          </button>
+          <form action="#" class="modal-recall-form" name="recall-form">
+            <fieldset class="modal-recall-fieldset">
+              <legend class="modal__title">Заказать звонок</legend>
+              <label for="phone">
+                <input
+                  class="modal-row-input"
+                  name="phone"
+                  type="tel"
+                  placeholder="Телефон"
+                  required
+                />
+              </label>
+                <p class="modal-paragraph">
+                  Нажимая “отправить”, вы даете согласие на
+                  <a href="#" class="modal-paragraph-link"
+                    >обработку персональных данных</a
+                  >
+                  и соглашаетесь с нашей
+                  <a href="#" class="modal-paragraph-link"
+                    >политикой конфиденциальности</a
+                  >
+                </p>
+              </label>
+            </fieldset>
+            <button type="submit" class="modal-recall-form-submit-btn btn-cta modal-submit-btn"
+              ><p class="btn-cta__text">Отправить</p>
+              <img src="../src/img/goside.svg" alt="Отправить" />
+            </button>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>

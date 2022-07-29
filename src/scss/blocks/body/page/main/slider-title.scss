@@ -1,0 +1,16 @@
+.slider-title {
+    padding: 16px;
+    background-image: linear-gradient(to right,$bgColor-dark,$bgColor-light);
+    letter-spacing: -0.2px;
+    color: $text-light;
+    text-transform: uppercase;
+    
+    @media screen and (min-width: 768px){
+        padding-left: 24px;
+    }
+
+    @media screen and (min-width: 1366px){
+        padding-left: 32px;
+        margin-top: 50px;
+    }
+};

@@ -1,0 +1,57 @@
+.services-large {
+    display: none;
+    margin: 0 24px;
+    
+    
+    @media screen and (min-width: 1366px) {
+        margin-left: 32px;
+    }
+
+    &__legend {
+        display: grid;
+        grid-template-columns: 24px 1fr 24px;
+
+        &--wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            padding-top: 30px;
+            padding-bottom: 24px;
+            grid-column-start: 2;
+        }
+    }
+
+    &-cards {        
+        background-color: $bgColor-light;
+        border-radius: 6px;
+        display: grid;
+        grid-template-columns: 24px 1fr 24px;
+
+        &-item {
+            display: grid;
+            grid-template-columns: 2fr 1fr 0.5fr 0.5fr;
+            border-bottom: 1px solid #EAEAEA;
+            grid-column-start: 2;
+
+            &__services{
+                padding: 24px 0;
+            }
+
+            &__price {
+                padding: 24px 0;
+            }
+
+            &__term {
+                padding: 24px 0;
+            }
+
+            &__btn {
+                width: 120px;
+                margin: auto 0;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}

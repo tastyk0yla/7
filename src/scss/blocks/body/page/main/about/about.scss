@@ -1,0 +1,31 @@
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    
+    @media screen and (min-width: 768px){
+        display: grid;
+        grid-template-columns: 24px 1fr 1fr 24px;
+    }
+    
+    @media screen and (min-width: 1366px){
+        grid-template-columns: 32px 1fr 1fr 32px;
+    }
+
+    &__image,
+    &__image img {
+        margin: 0 auto;
+        max-width: 320px;
+        
+
+        @media screen and (min-width: 697px){
+            max-width: 360px;
+            grid-column-start: 3;
+            justify-self: center;
+            border-radius: 6px;
+        }
+        
+        @media screen and (min-width: 1366px){
+            max-width: 530px;
+        }
+    }    
+}

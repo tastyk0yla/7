@@ -1,0 +1,157 @@
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    
+    &-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $btnColor;
+        transition: transform 0.5s ease;
+
+        &:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        &-more {
+            display: flex;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $btnColor;
+            background-color: $bgColor-light;
+            width: 40px;
+            height: 40px;
+            margin-left: auto;
+        }
+
+        &-repair,
+        &-check-status {
+            display: flex;
+            width: 175px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+        }
+    }
+
+    &-slider {
+        display: flex;
+        flex-basis: content;
+        box-sizing: border-box;
+        height: 40px;
+        padding: 6px 16px 8px;
+        white-space: nowrap;
+        color: #7E7E82;
+        border-radius: 6px;
+        border: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        letter-spacing: -0.6px;
+        margin: 2px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $bgColor-light;
+            outline: 2px solid #B8FFEC;
+        }
+    }
+
+    &-expand {
+        display: flex;
+        max-height: 24px;
+        text-decoration: none;
+        gap: 8px;
+        padding-left: 0;
+        border: 0px;
+        background-color: transparent;
+
+        &__img {
+            transition: transform 0.3s ease;
+            transform: rotate(0deg);
+
+            &.expanded {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__text {
+        @include btnText($text-dark);
+
+        .btn-slider & {
+            @include btnText($text-light);
+        }
+    }
+
+    &-cta {
+
+        box-sizing: border-box;
+        padding: 4px 8px 4px 12px;
+        align-items: center;
+        gap: 8px;
+        display: flex;
+        background-color: $btnColor;
+        border-radius: 16px;
+        transition: transform 0.5s ease;
+        height: 32px;
+
+        &__text {
+            color: $bgColor-light;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: -0.15px;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            opacity: 0.8;
+        }
+    }
+
+    &-get-offer{
+        width: 192px;
+        height: 55px;
+        background-color: transparent;
+
+        &__text{
+            text-align: left;
+            vertical-align: baseline;
+            @include btnText($text-dark);
+            font-weight: medium;
+
+            &>img {
+                position: relative;
+                bottom: -2px;
+            }
+        }
+
+    }
+}
+
+
+.slider__btn-expand {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 8px;
+        margin-left: 24px;
+
+        &__text {
+            font-weight: medium;
+        }
+    }
+};

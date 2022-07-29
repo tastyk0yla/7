@@ -1,0 +1,125 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/swiper/swiper.scss';
+
+@font-face {
+  font-family: "TT Lakes";
+  src:
+    local("TT Lakes"),
+    url("../fonts/TTLakes-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src:
+    local("TT Lakes"),
+    url("../fonts/TTLakes-Medium.ttf") format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src:
+    local("TT Lakes"),
+    url("../fonts/TTLakes-Bold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+p,
+h1,
+button {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+$bgColor-light: #fff;
+$bgColor-dark: #f8f8f8;
+
+$text-dark: #1B1C21;
+$text-light: #7E7E82;
+
+$clrDividers: #D9FFF5;
+$btnColor: #FF3E79;
+$clrHighlight: #41F6D7;
+
+@mixin btnText($clr) {
+  font-family: "TT Lakes", sans-serif;
+  font-weight: 500;
+  margin:auto;
+  font-size: 16px;  
+  line-height: 24px;
+  color: $clr;
+}
+
+.swiper {
+  &-pagination {
+    display: flex; 
+    justify-content: center; //центрируем bullets по горизонтали
+
+    &-bullet {
+      height: 12px; // устанавливаем высоту bullets на 12 px
+      width: 12px;  // устанавливаем ширину bullets на 12 px
+      background: #DDD;  // устанавливаем цвет неактивных bullets
+      border-radius: 50%;  // делаем их круглыми
+      margin: 10px 6px;  // устанавливаем отступ по горизонтали в 6px
+      cursor: pointer;
+
+      &-active {
+        background: #B5B6BC; //устанавливем цвет для активных bullets
+      }
+    }
+  }
+}
+
+@import './blocks/btn.scss';
+
+@import './blocks/body/body.scss';
+
+@import './blocks/modal/modal.scss';
+
+@import './blocks/body/main-menu/main-menu.scss';
+@import './blocks/body/main-menu/main-menu-header/main-menu-header.scss';
+@import './blocks/body/main-menu/main-menu-main-list/main-menu-main-list.scss';
+@import './blocks/body/main-menu/main-menu-footer/main-menu-footer.scss';
+@import './blocks/body/page/page.scss';
+
+@import './blocks/body/page/header/header-wrapper.scss';
+@import './blocks/body/page/header/header-menu/header-menu.scss';
+
+@import './blocks/body/page/main/page-wrapper.scss';
+
+@import './blocks/body/page/main/title.scss';
+@import './blocks/body/page/main/menu-slider/menu-slider.scss';
+
+@import './blocks/body/page/main/about/about.scss';
+@import './blocks/body/page/main/about/article/article.scss';
+
+@import './blocks/body/page/main/slider-title.scss';
+
+@import './blocks/body/page/main/brand-slider/brand-slider.scss';
+@import './blocks/body/page/main/brand-slider/brand-card/brand-card.scss';
+
+@import './blocks/body/page/main/device-type-slider/device-type-slider.scss';
+@import './blocks/body/page/main/device-type-slider/device-type-card/device-type-card.scss';
+
+@import './blocks/body/page/main/services-slider/services-slider.scss';
+@import './blocks/body/page/main/services-slider/services-card/services-card.scss';
+
+@import './blocks/body/page/footer/page-footer.scss';
+
+
+@import './blocks/body/page/main/services-large/services-large.scss';
+
+

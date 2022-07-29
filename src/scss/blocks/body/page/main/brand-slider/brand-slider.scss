@@ -1,0 +1,54 @@
+.brand-slider {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    color: $text-light;
+
+    &-container {
+        min-width: 0;
+        max-width: 100%;
+        height: 100%;
+        background-color: $bgColor-dark;
+    }
+
+    &__cards {
+        height: 72px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 16px;
+        min-width: 0;
+        max-height: max-content;
+        transition: all 0.2s ease;
+
+        @media screen and (min-width: 768px){
+            padding: 24px;
+            gap: 24px;
+            flex-wrap: wrap;
+            height: 165px;
+            overflow: hidden;
+        }
+
+        &--expanded {
+            @media screen and (min-width: 768px){
+            height: 265px;
+            }
+            
+            @media (min-width: 1234px) and (max-width: 1365px) {
+                height: 165px; 
+            }
+
+            @media screen and (min-width: 1553px) {
+                height: 165px;
+            }
+        }
+    };
+}
+
+.slider {
+    min-width: 0;
+    max-width: 100%;
+    height: 100%;
+    background-color: $bgColor-dark;
+}
