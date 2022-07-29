@@ -31,7 +31,8 @@
             grid-template-columns: 2fr 1fr 0.5fr 0.5fr;
             border-bottom: 1px solid #EAEAEA;
             grid-column-start: 2;
-
+            color: $text-dark;
+            
             &__services{
                 padding: 24px 0;
             }
